@@ -160,3 +160,47 @@ header{
     }
 }
     
+
+// ABOUT
+
+.about{
+    background-color: $dark;
+    color: $white;
+    padding: $padding;
+    
+    .container1{
+        @include flex(space-between,center,row,wrap);
+
+        article{
+            flex: 0 0 45%;
+
+            h3{
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+            h3+p{
+                color:$gray;
+                margin-bottom: 10px;
+            }
+
+            button{
+                @include btn($primary,$white,none,none);
+                margin-top: 20px;
+
+                &:hover{
+                    transition: $transition;
+                    cursor: pointer;
+                    color: $primary;
+                    background-color: $white;
+                }
+            }
+
+            h4{
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+}

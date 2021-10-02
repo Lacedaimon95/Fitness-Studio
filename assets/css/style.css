@@ -126,4 +126,41 @@ header {
         cursor: pointer;
         color: #ffffff; }
 
+.about {
+  background-color: #171819;
+  color: #ffffff;
+  padding: 50px 0px; }
+  .about .container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .about .container1 article {
+      flex: 0 0 45%; }
+      .about .container1 article h3 {
+        font-size: 2rem;
+        margin-bottom: 10px; }
+      .about .container1 article h3 + p {
+        color: #909090;
+        margin-bottom: 10px; }
+      .about .container1 article button {
+        background: #f13a11;
+        color: #ffffff;
+        border-radius: none;
+        font-size: 1rem;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        border: none;
+        margin-top: 20px; }
+        .about .container1 article button:hover {
+          transition: 0.4 ease;
+          cursor: pointer;
+          color: #f13a11;
+          background-color: #ffffff; }
+      .about .container1 article h4 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 10px; }
+
 /*# sourceMappingURL=style.css.map */
