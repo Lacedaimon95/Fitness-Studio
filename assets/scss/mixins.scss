@@ -5,3 +5,13 @@
     flex-direction: $direction;
     flex-wrap: $wrap;
 }
+
+@mixin btn($bgcolor,$color,$radius,$border) {
+    background: $bgcolor;
+    color: $color;
+    border-radius: $radius;
+    font-size: 1rem;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: $border;
+}
