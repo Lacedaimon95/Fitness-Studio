@@ -37,7 +37,7 @@ a {
   text-decoration: none;
   color: #404040; }
   a:hover {
-    transition: 0.4 ease; }
+    transition: 0.6 ease; }
 
 nav {
   background-color: #171819; }
@@ -110,7 +110,7 @@ header {
       text-transform: uppercase;
       border: none; }
       header hgroup .btn-area button:nth-child(1):hover {
-        transition: 0.4 ease;
+        transition: 0.6 ease;
         cursor: pointer;
         color: #f13a11; }
     header hgroup .btn-area button:nth-child(2) {
@@ -122,7 +122,7 @@ header {
       text-transform: uppercase;
       border: solid #f13a11; }
       header hgroup .btn-area button:nth-child(2):hover {
-        transition: 0.4 ease;
+        transition: 0.6 ease;
         cursor: pointer;
         color: #ffffff; }
 
@@ -138,6 +138,10 @@ header {
     flex-wrap: wrap; }
     .about .container1 article {
       flex: 0 0 40%; }
+      @media (max-width: 768px) {
+        .about .container1 article {
+          flex: 0 0 100%;
+          margin-bottom: 20px; } }
       .about .container1 article h3 {
         font-size: 2rem;
         margin-bottom: 10px; }
@@ -157,7 +161,7 @@ header {
         margin-top: 20px;
         border-radius: 5px; }
         .about .container1 article button:hover {
-          transition: 0.4 ease;
+          transition: 0.6 ease;
           cursor: pointer;
           color: #f13a11;
           background-color: #ffffff; }
@@ -177,6 +181,10 @@ header {
     flex-wrap: wrap; }
     .gym .container article {
       flex: 0 0 45%; }
+      @media (max-width: 768px) {
+        .gym .container article {
+          flex: 0 0 100%;
+          text-align: center; } }
       .gym .container article:nth-child(1) h2 {
         font-size: 2rem;
         padding-bottom: 20px; }
@@ -192,9 +200,17 @@ header {
           flex: 0 0 45%;
           text-align: center;
           box-shadow: 0 0 10px #171819; }
+          @media (max-width: 768px) {
+            .gym .container article:nth-child(2) div {
+              flex: 0 0 100%;
+              margin-bottom: 20px; } }
           .gym .container article:nth-child(2) div:hover {
             transform: scale(1.2);
             transition-duration: 2s; }
+            @media (max-width: 768px) {
+              .gym .container article:nth-child(2) div:hover {
+                transform: scale(0.9);
+                transition-duration: 2s; } }
           .gym .container article:nth-child(2) div img {
             width: 100%;
             height: auto; }
@@ -203,5 +219,56 @@ header {
             padding-bottom: 15px; }
           .gym .container article:nth-child(2) div p {
             padding-bottom: 15px; }
+
+.classes {
+  padding: 50px 0px; }
+  .classes hgroup {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.7rem; }
+    .classes hgroup span {
+      color: #909090; }
+  .classes .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .classes .row article {
+      flex: 0 0 30%;
+      text-align: center;
+      box-shadow: 0 0 10px #171819; }
+      @media (max-width: 768px) {
+        .classes .row article {
+          flex: 0 0 100%;
+          margin-bottom: 20px; } }
+      .classes .row article:hover {
+        transform: scale(1.1);
+        transition-duration: 2s; }
+        @media (max-width: 768px) {
+          .classes .row article:hover {
+            transform: scale(0.9);
+            transition-duration: 2s; } }
+      .classes .row article img {
+        width: 100%;
+        height: auto; }
+      .classes .row article h3 {
+        font-size: 2rem;
+        padding-bottom: 20px; }
+      .classes .row article p {
+        padding-bottom: 20px; }
+      .classes .row article button {
+        background: #f13a11;
+        color: #ffffff;
+        border-radius: 25px 0px 25px 0px;
+        font-size: 1rem;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        border: none;
+        margin-bottom: 20px; }
+        .classes .row article button:hover {
+          transition: 0.6 ease;
+          cursor: pointer;
+          border-radius: 0px 25px 0px 25px; }
 
 /*# sourceMappingURL=style.css.map */
