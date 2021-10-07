@@ -137,12 +137,14 @@ header {
     flex-direction: row;
     flex-wrap: wrap; }
     .about .container1 article {
-      flex: 0 0 45%; }
+      flex: 0 0 40%; }
       .about .container1 article h3 {
         font-size: 2rem;
         margin-bottom: 10px; }
+      .about .container1 article p {
+        color: #909090; }
       .about .container1 article h3 + p {
-        color: #909090;
+        color: #ffffff;
         margin-bottom: 10px; }
       .about .container1 article button {
         background: #f13a11;
@@ -152,15 +154,54 @@ header {
         padding: 15px 30px;
         text-transform: uppercase;
         border: none;
-        margin-top: 20px; }
+        margin-top: 20px;
+        border-radius: 5px; }
         .about .container1 article button:hover {
           transition: 0.4 ease;
           cursor: pointer;
           color: #f13a11;
           background-color: #ffffff; }
       .about .container1 article h4 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 700;
         margin-bottom: 10px; }
+
+.gym {
+  background-color: #f9f9f9;
+  padding: 50px 0px; }
+  .gym .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .gym .container article {
+      flex: 0 0 45%; }
+      .gym .container article:nth-child(1) h2 {
+        font-size: 2rem;
+        padding-bottom: 20px; }
+      .gym .container article:nth-child(1) p {
+        padding-bottom: 20px; }
+      .gym .container article:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .gym .container article:nth-child(2) div {
+          flex: 0 0 45%;
+          text-align: center;
+          box-shadow: 0 0 10px #171819; }
+          .gym .container article:nth-child(2) div:hover {
+            transform: scale(1.2);
+            transition-duration: 2s; }
+          .gym .container article:nth-child(2) div img {
+            width: 100%;
+            height: auto; }
+          .gym .container article:nth-child(2) div h3 {
+            font-size: 1.7rem;
+            padding-bottom: 15px; }
+          .gym .container article:nth-child(2) div p {
+            padding-bottom: 15px; }
 
 /*# sourceMappingURL=style.css.map */
