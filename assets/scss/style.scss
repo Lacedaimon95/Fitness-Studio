@@ -372,6 +372,11 @@ header{
             height: 500px;
             text-align: center;
 
+            @media(max-width:768px){
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+            }
+
             h3{
                 font-size: 2rem;
                 margin-bottom: 20px;
@@ -422,9 +427,36 @@ header{
 
             }
         }
-
-
     }
+}
 
 
+// FOOTER SECTION
+
+footer{
+    padding: $padding;
+    border-top:1px solid $gray;
+    
+
+    .container{
+        @include flex(space-around,center,row,wrap);
+
+
+        article{
+
+            @media(max-width:768px){
+               margin-bottom: 20px;
+               text-align: center;
+            }
+
+            a{
+                margin-left: 20px;
+            }
+
+            i{
+                color: $primary;
+            }
+
+        }
+    }
 }
