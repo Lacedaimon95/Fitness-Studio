@@ -335,11 +335,11 @@ header{
 
             h3{
                 font-size: 2rem;
-                padding-bottom: 20px;
+                padding: 20px;
             }
 
             p{
-                padding-bottom: 20px;
+                padding: 0px 20px 20px 20px ;
             }
 
             button{
@@ -356,3 +356,75 @@ header{
     }
 }
 
+
+// CONTACT SECTION
+
+.contact{
+    padding: $padding;
+    background-color: $aboutBgColor;
+    
+    .container{
+        
+        @include flex(space-between,center,row,wrap);
+
+        article{
+            flex: 0 0 43%;
+            height: 500px;
+            text-align: center;
+
+            h3{
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            &:nth-child(1){
+                form{
+                    @include flex(space-between,flex-start,column,wrap);
+                    
+                    input{
+                        padding:10px;
+                        width: 100%;
+                        margin-bottom: 20px;
+                        font-size: 1rem;
+                    }
+
+                    textarea{
+                        padding:10px;
+                        font-size: 1rem;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                button{
+                    @include btn($dark,$white,2px,none);
+                    width: 100%;
+                    text-transform: capitalize;
+
+                    &:hover{
+                        transition: $transition;
+                        cursor: pointer;
+                        background-color: $primary;
+                    }
+                }
+            }
+
+            &:nth-child(2){
+
+                p{
+                    margin-bottom:20px;
+                }
+
+                iframe{
+                    height: 70%;
+                    width: 100%;
+                }
+
+            }
+        }
+
+
+    }
+
+
+}

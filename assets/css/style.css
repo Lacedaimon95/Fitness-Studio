@@ -254,9 +254,9 @@ header {
         height: auto; }
       .classes .row article h3 {
         font-size: 2rem;
-        padding-bottom: 20px; }
+        padding: 20px; }
       .classes .row article p {
-        padding-bottom: 20px; }
+        padding: 0px 20px 20px 20px; }
       .classes .row article button {
         background: #f13a11;
         color: #ffffff;
@@ -270,5 +270,57 @@ header {
           transition: 0.6 ease;
           cursor: pointer;
           border-radius: 0px 25px 0px 25px; }
+
+.contact {
+  padding: 50px 0px;
+  background-color: #f9f9f9; }
+  .contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .contact .container article {
+      flex: 0 0 43%;
+      height: 500px;
+      text-align: center; }
+      .contact .container article h3 {
+        font-size: 2rem;
+        margin-bottom: 20px; }
+      .contact .container article:nth-child(1) form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap; }
+        .contact .container article:nth-child(1) form input {
+          padding: 10px;
+          width: 100%;
+          margin-bottom: 20px;
+          font-size: 1rem; }
+        .contact .container article:nth-child(1) form textarea {
+          padding: 10px;
+          font-size: 1rem;
+          width: 100%;
+          margin-bottom: 20px; }
+      .contact .container article:nth-child(1) button {
+        background: #171819;
+        color: #ffffff;
+        border-radius: 2px;
+        font-size: 1rem;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        border: none;
+        width: 100%;
+        text-transform: capitalize; }
+        .contact .container article:nth-child(1) button:hover {
+          transition: 0.6 ease;
+          cursor: pointer;
+          background-color: #f13a11; }
+      .contact .container article:nth-child(2) p {
+        margin-bottom: 20px; }
+      .contact .container article:nth-child(2) iframe {
+        height: 70%;
+        width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
