@@ -12,14 +12,20 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-size: 16px; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Roboto", sans-serif; }
 
 .container {
@@ -329,7 +335,8 @@ header {
 
 footer {
   padding: 50px 0px;
-  border-top: 1px solid #909090; }
+  border-top: 1px solid #909090;
+  background-color: #404040; }
   footer .container {
     display: flex;
     justify-content: space-around;
@@ -340,8 +347,11 @@ footer {
       footer .container article {
         margin-bottom: 20px;
         text-align: center; } }
+    footer .container article P {
+      color: #ffffff; }
     footer .container article a {
-      margin-left: 20px; }
+      margin-left: 20px;
+      color: #ffffff; }
     footer .container article i {
       color: #f13a11; }
 
